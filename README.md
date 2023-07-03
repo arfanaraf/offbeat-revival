@@ -28,19 +28,169 @@ attempting to revive our fav playlist
 ---
 
 
-## some reading
+## some reading from spotify docs
 
 ✔ when done
 
-1. [spotify api web app frontpage](https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
+1. [web app frontpage tutorial](https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
 2. [current user profile API call](https://developer.spotify.com/documentation/web-api/reference/get-current-users-profile)
-3. [spotify docs: auth code flow](https://developer.spotify.com/documentation/web-api/tutorials/code-pkce-flow)
-5. more
-6. then
+3. [auth code flow](https://developer.spotify.com/documentation/web-api/tutorials/code-pkce-flow)
+4. [create playlist](https://developer.spotify.com/documentation/web-api/reference/create-playlist)
+5. [get users featured playlists](https://developer.spotify.com/documentation/web-api/reference/get-featured-playlists)
+6. [upload custom playlist cover](https://developer.spotify.com/documentation/web-api/reference/upload-custom-playlist-cover)
+  - using some of the album covers from played songs may be prohibited
+7. [users top items](https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks)
+8. [users recently played items](https://developer.spotify.com/documentation/web-api/reference/get-recently-played)
 
 ---
 
-## example of my (arfan) user json response
+### example of recently played json response
+
+```json
+{
+  "href": "string",
+  "limit": 0,
+  "next": "string",
+  "cursors": {
+    "after": "string",
+    "before": "string"
+  },
+  "total": 0,
+  "items": [
+    {
+      "track": {
+        "album": {
+          "album_type": "compilation",
+          "total_tracks": 9,
+          "available_markets": [
+            "CA",
+            "BR",
+            "IT"
+          ],
+          "external_urls": {
+            "spotify": "string"
+          },
+          "href": "string",
+          "id": "2up3OPMp9Tb4dAKM2erWXQ",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
+              "height": 300,
+              "width": 300
+            }
+          ],
+          "name": "string",
+          "release_date": "1981-12",
+          "release_date_precision": "year",
+          "restrictions": {
+            "reason": "market"
+          },
+          "type": "album",
+          "uri": "spotify:album:2up3OPMp9Tb4dAKM2erWXQ",
+          "copyrights": [
+            {
+              "text": "string",
+              "type": "string"
+            }
+          ],
+          "external_ids": {
+            "isrc": "string",
+            "ean": "string",
+            "upc": "string"
+          },
+          "genres": [
+            "Egg punk",
+            "Noise rock"
+          ],
+          "label": "string",
+          "popularity": 0,
+          "album_group": "compilation",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "string"
+              },
+              "href": "string",
+              "id": "string",
+              "name": "string",
+              "type": "artist",
+              "uri": "string"
+            }
+          ]
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "string"
+            },
+            "followers": {
+              "href": "string",
+              "total": 0
+            },
+            "genres": [
+              "Prog rock",
+              "Grunge"
+            ],
+            "href": "string",
+            "id": "string",
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
+                "height": 300,
+                "width": 300
+              }
+            ],
+            "name": "string",
+            "popularity": 0,
+            "type": "artist",
+            "uri": "string"
+          }
+        ],
+        "available_markets": [
+          "string"
+        ],
+        "disc_number": 0,
+        "duration_ms": 0,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "string",
+          "ean": "string",
+          "upc": "string"
+        },
+        "external_urls": {
+          "spotify": "string"
+        },
+        "href": "string",
+        "id": "string",
+        "is_playable": false,
+        "linked_from": {},
+        "restrictions": {
+          "reason": "string"
+        },
+        "name": "string",
+        "popularity": 0,
+        "preview_url": "string",
+        "track_number": 0,
+        "type": "track",
+        "uri": "string",
+        "is_local": false
+      },
+      "played_at": "string",
+      "context": {
+        "type": "string",
+        "href": "string",
+        "external_urls": {
+          "spotify": "string"
+        },
+        "uri": "string"
+      }
+    }
+  ]
+}
+```
+
+
+### example of my (arfan) user json response
 
 ```json
 {
