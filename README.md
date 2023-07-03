@@ -33,8 +33,9 @@ attempting to revive our fav playlist
 ✔ when done
 
 1. https://developer.spotify.com/documentation/web-api/howtos/web-app-profile
-2. more
-3. then
+2. https://developer.spotify.com/documentation/web-api/reference/get-current-users-profile
+3. more
+4. then
 
 ---
 
