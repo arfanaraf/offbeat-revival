@@ -17,6 +17,13 @@ attempting to revive our fav playlist
 
 ---
 
+## data structure for sets of people using the app
+
+| column | description |
+|---|---|
+| id | int |
+| main user | spotify user id |
+| playlist users | list of spotify user id |
 
 ---
 
