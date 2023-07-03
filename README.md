@@ -32,10 +32,11 @@ attempting to revive our fav playlist
 
 ✔ when done
 
-1. https://developer.spotify.com/documentation/web-api/howtos/web-app-profile
-2. https://developer.spotify.com/documentation/web-api/reference/get-current-users-profile
-3. more
-4. then
+1. [spotify api web app frontpage](https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
+2. [current user profile API call](https://developer.spotify.com/documentation/web-api/reference/get-current-users-profile)
+3. [spotify docs: auth code flow](https://developer.spotify.com/documentation/web-api/tutorials/code-pkce-flow)
+5. more
+6. then
 
 ---
 
