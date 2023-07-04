@@ -1,4 +1,5 @@
 # offbeat-revival
+
 attempting to revive our fav playlist
 
 ---
@@ -8,25 +9,25 @@ attempting to revive our fav playlist
 - reading spotify API docs
 - planning structure
 - python backend or total typescript?
-  - scala backend later?? 
+  - scala backend later??
 - test API calls
 - web-server structure
   - one big basic container lets not fuck about
   - hosting?
-  - do we even host?? 
+  - do we even host??
 
 ---
 
 ## data structure for sets of people using the app
 
-| column | description |
-|---|---|
-| id | int |
-| main user | spotify user id |
+
+| column         | description             |
+| -------------- | ----------------------- |
+| id             | int                     |
+| main user      | spotify user id         |
 | playlist users | list of spotify user id |
 
 ---
-
 
 ## some reading from spotify docs
 
@@ -38,7 +39,9 @@ attempting to revive our fav playlist
 4. [create playlist](https://developer.spotify.com/documentation/web-api/reference/create-playlist)
 5. [get users featured playlists](https://developer.spotify.com/documentation/web-api/reference/get-featured-playlists)
 6. [upload custom playlist cover](https://developer.spotify.com/documentation/web-api/reference/upload-custom-playlist-cover)
-  - using some of the album covers from played songs may be prohibited
+
+- using some of the album covers from played songs may be prohibited
+
 7. [users top items](https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks)
 8. [users recently played items](https://developer.spotify.com/documentation/web-api/reference/get-recently-played)
 
@@ -189,7 +192,6 @@ attempting to revive our fav playlist
 }
 ```
 
-
 ### example of my (arfan) user json response
 
 ```json
@@ -227,4 +229,3 @@ attempting to revive our fav playlist
   "email": "arfan.arif@hotmail.co.uk"
 }
 ```
-
