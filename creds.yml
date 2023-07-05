@@ -1,0 +1,4 @@
+spotify:
+  client_id: 3c4fe9e279864f168b1a31711c1c0c6c
+  client_secret: c32321eccef240c1a980e48399ca0d38
+  redirect_uri: developer.spotify.com
